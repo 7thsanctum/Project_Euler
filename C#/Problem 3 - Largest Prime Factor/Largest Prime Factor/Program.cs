@@ -10,28 +10,44 @@ namespace Largest_Prime_Factor
         static void Main(string[] args)
         {
             long number = 600851475143;
+            //int number = 360;
+            long temp = number;
             long largestPrime = 2;
 
-            if(number % largestPrime == 0)
-            {
-                // Then move on to next prime number
-            }
-            else
-            {
-                // This value is largest primefactor
-            }
-
-            for (long i = number / 2; i > 2; i--)
-            {
-                Console.Write("\n" + i);
-                if (number % i == 0)
+            do{
+                if (temp % largestPrime == 0)
                 {
-                    largestPrime = number;
-                    Console.Write(largestPrime);
-                    Console.ReadKey();
+                    temp = temp / largestPrime;
                 }
-            }
+                else
+                {
+                    if (temp != 1)
+                    {
+                        int count = 0;
+                        // Find next prime
+                        for (long i = largestPrime + 1; count == 0; i++)
+                        {
+                            for (int k = 2; k < i; k++)
+                            {
+                                if (i % k == 0)
+                                {
+                                    break;
+                                }
+                                else if (k + 1 == i)
+                                { 
+                                    largestPrime = i;
+                                    count++;
+                                }
+                            }
+                        }
+                        count = 0;
+                    }
+                }
+            }while(temp > 2);
             
+            Console.Write(largestPrime);
+            Console.ReadKey();
+
         } 
     }
 }
