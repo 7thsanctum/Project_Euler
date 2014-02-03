@@ -1,6 +1,6 @@
 Author : Mark M. Miller
   Date : 01/08/2013 - 23:44 GMT
-  Edit : 01/08/2013 - 23:44 GMT
+  Edit : 03/02/2014 - 23:36 GMT
 
 Project Euler - Read Me
 ------------------------
@@ -14,5 +14,5 @@ That said, feel free to refer to the code you find within and improve upon it if
 
 Requirements
 -------------
-The C# projects have been built in a combination of VS2010 and VS2012.
+The C# and C++ projects have been built in a combination of VS2010 and VS2012.
 
