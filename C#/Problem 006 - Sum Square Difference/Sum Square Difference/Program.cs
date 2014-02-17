@@ -18,9 +18,7 @@ namespace Sum_Square_Difference
             }
             
             int difference = (sqrSum*sqrSum) - sum;
-            Console.Write("Sum : " + sum);
-            Console.Write("SqrSum : " + sqrSum);
-            Console.Write("Difference : " + difference);
+            Console.Write("Sum : " + sum + "\nSqrSum : " + sqrSum + "\nDifference : " + difference);
             Console.ReadKey();
         }
     }
