@@ -1,13 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
+#include <iterator>
 #include <vector>
 #include <string>
 
 using namespace std;
-vector<vector<string>> tokens;
-vector<vector<int>> ival (20, vector<int>(20));
+vector<vector<string> > tokens;
+vector<vector<int> > ival (20, vector<int>(20));
 
 void read_inputfile()
 {

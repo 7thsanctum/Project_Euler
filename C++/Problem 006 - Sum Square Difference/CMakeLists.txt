@@ -1,0 +1,1 @@
+add_executable(Problem_006_Sum_Square Main.cpp)

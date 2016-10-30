@@ -1,0 +1,1 @@
+add_executable(Problem_010_Sum_Primes Main.cpp)
